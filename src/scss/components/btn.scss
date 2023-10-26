@@ -1,0 +1,25 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 16px 18px;
+
+    font-family: $family;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+
+    background-color: $colors-accent;
+    border-radius: 100px;
+    border: 0;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s linear;
+
+    &:hover {
+        background-color: darken($colors-accent, 15%);
+    }
+}
