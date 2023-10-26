@@ -1,8 +1,41 @@
 .accordion {
     display: flex;
     flex-direction: column;
+    gap: 16px;
+
+    & .accordion {
+        padding-left: 20px;
+
+        .accordion__item-btn {
+            font-size: 1.6rem;
+            font-weight: 400;
+
+            padding: 0;
+            border: 0;
+
+            &::after {
+                width: 19px;
+                height: 19px;
+
+                background-size: 8px;
+            }
+        }
+
+        .accordion__item-body {
+            padding: 8px 0 0;
+        }
+
+        .service__btn {
+            padding: 12px 20px;
+        }
+    }
 
     &__item {
+        &:last-of-type {
+            .accordion__item-btn {
+                border-bottom: 0;
+            }
+        }
     }
 
     &__item-header {
@@ -14,21 +47,24 @@
         display: flex;
 
         margin: 0;
-        padding: 0;
+        padding: 0 0 16px;
 
-        border: 0;
+        font-family: $family;
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: left;
+        color: $colors-text;
+
         background: none;
+        border: 0;
+        border-bottom: 1px solid $colors-text;
 
         transition: color 0.1s linear;
-
-        &.active {
-            color: #0c63e4;
-        }
+        cursor: pointer;
 
         &.active::after {
-            background-image: url("data:image/svg+xml,%3Csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath id='Vector' d='M19 9L12 16L5 9' stroke='%230c63e4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-
-            transform: rotate(-180deg);
+            transform: rotate(45deg);
         }
 
         &::after {
@@ -36,24 +72,45 @@
             display: block;
 
             flex-shrink: 0;
-            width: 25px;
-            height: 25px;
+            width: 24px;
+            height: 24px;
 
             margin-left: auto;
 
-            background-image: url("data:image/svg+xml,%3Csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath id='Vector' d='M19 9L12 16L5 9' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-image: url('../img/icons/plus.svg');
             background-repeat: no-repeat;
-            background-size: 25px;
+            background-position: center;
+            background-size: 10px;
+
+            border: 1px solid $colors-text;
+            border-radius: 50%;
 
             transition: transform 0.2s ease-in-out;
         }
     }
 
     &__item-collapse {
-        display: none;
+        // display: none;
+
+        padding: 0;
+        margin: auto;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
 
         &.active {
-            display: flex;
+            // display: flex;
+
+            visibility: visible;
+            height: auto;
+            overflow: none;
+            opacity: 1;
         }
+    }
+
+    &__item-body {
+        padding: 16px 0;
     }
 }

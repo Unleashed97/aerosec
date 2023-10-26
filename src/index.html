@@ -14,118 +14,854 @@
             <!-- main -->
             <main>
                 <!-- section -->
-                <!-- <section class="section">
+                <section class="section section--showcase">
                     <div class="container">
                         <div class="section__inner">
-                            <h2 class="section__title">Title</h2>
-                            <div class="section__content">content</div>
-                        </div>
-                    </div>
-                </section> -->
-                <!-- end of accordion -->
+                            <h2 class="section__title">
+                                РЕАЛИЗОВАННЫЕ ПРОЕКТЫ, ПО КОТОРЫМ ОБРАТИЛИСЬ К
+                                НАМ
+                            </h2>
+                            <div class="swiper swiper--showcase">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source
+                                                srcset="
+                                                    img/section/showcase/img1-sm.jpg
+                                                "
+                                                media="(max-width: 576px)"
+                                            />
+                                            <img
+                                                src="img/section/showcase/img1.jpg"
+                                                alt=""
+                                                class="swiper-image"
+                                            />
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source
+                                                srcset="
+                                                    img/section/showcase/img1-sm.jpg
+                                                "
+                                                media="(max-width: 576px)"
+                                            />
+                                            <img
+                                                src="img/section/showcase/img1.jpg"
+                                                alt=""
+                                                class="swiper-image"
+                                            />
+                                        </picture>
+                                    </div>
+                                </div>
 
-                <!-- accordion -->
-                <!-- <div class="accordion">
-                    <div class="accordion__item">
-                        <h2 class="accordion__item-header">
-                            <button
-                                type="button"
-                                class="accordion__item-btn"
-                                data-target="accordion-collapse-1"
-                            >
-                                Accordion item header 1
-                            </button>
-                        </h2>
-
-                        <div
-                            id="accordion-collapse-1"
-                            class="accordion__item-collapse"
-                        >
-                            <div class="accordion__item-body">
-                                collapsed text many many text
+                                <div class="swiper-controls">
+                                    <div class="swiper-button-prev--showcase">
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 20 20"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M12.6 4.4L7.79999 10L12.6 15.6"
+                                                stroke="white"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-button-next--showcase">
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 20 20"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M7.40001 4.4L12.2 10L7.40001 15.6"
+                                                stroke="white"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-spinner"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="accordion__item">
-                        <h2 class="accordion__item-header">
-                            <button
-                                type="button"
-                                class="accordion__item-btn"
-                                data-target="accordion-collapse-1"
-                            >
-                                Accordion item header 2
-                            </button>
-                        </h2>
+                </section>
+                <!-- end of section showcase -->
 
-                        <div
-                            id="accordion-collapse-1"
-                            class="accordion__item-collapse"
-                        >
-                            <div class="accordion__item-body">
-                                collapsed text many many text
+                <!-- section services -->
+                <section class="section section--services">
+                    <div class="container">
+                        <div class="section__inner">
+                            <h2 class="section__title">услуги</h2>
+                            <p class="section__subtitle">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipiscing elit Ut et massa mi. Aliquam in
+                                hendrerit urna.
+                            </p>
+
+                            <div class="section__content">
+                                <!-- accordion -->
+                                <div class="accordion">
+                                    <div class="accordion__item">
+                                        <h2 class="accordion__item-header">
+                                            <button
+                                                type="button"
+                                                class="accordion__item-btn"
+                                                data-target="accordion-collapse-1"
+                                            >
+                                                экспертиза зданий
+                                            </button>
+                                        </h2>
+
+                                        <div
+                                            id="accordion-collapse-1"
+                                            class="accordion__item-collapse"
+                                        >
+                                            <div class="accordion__item-body">
+                                                <!-- inner accordion -->
+                                                <div
+                                                    class="accordion accordion--inner"
+                                                >
+                                                    <div
+                                                        class="accordion__item"
+                                                    >
+                                                        <h2
+                                                            class="accordion__item-header"
+                                                        >
+                                                            <button
+                                                                type="button"
+                                                                class="accordion__item-btn"
+                                                                data-target="accordion-collapse-1"
+                                                            >
+                                                                НАЗВАНИЕ УСЛУГИ
+                                                            </button>
+                                                        </h2>
+
+                                                        <div
+                                                            id="accordion-collapse-1"
+                                                            class="accordion__item-collapse"
+                                                        >
+                                                            <div
+                                                                class="accordion__item-body"
+                                                            >
+                                                                <div
+                                                                    class="service"
+                                                                >
+                                                                    <p
+                                                                        class="service__price"
+                                                                    >
+                                                                        ЦЕНА: 10
+                                                                        000₽
+                                                                    </p>
+                                                                    <p
+                                                                        class="service__desc"
+                                                                    >
+                                                                        Lorem
+                                                                        ipsum
+                                                                        dolor
+                                                                        sit amet
+                                                                        consectetur
+                                                                        adipiscing
+                                                                        elit Ut
+                                                                        et massa
+                                                                        mi.
+                                                                        Aliquam
+                                                                        in
+                                                                        hendrerit
+                                                                        urna.
+                                                                        Pellentesque
+                                                                        sit amet
+                                                                        sapien
+                                                                        fringilla,
+                                                                        mattis
+                                                                        ligula
+                                                                        consectetur,
+                                                                        ultrices
+                                                                        mauris.
+                                                                        Maecenas
+                                                                        vitae
+                                                                        mattis
+                                                                        tellus.
+                                                                    </p>
+
+                                                                    <button
+                                                                        type="button"
+                                                                        class="btn service__btn"
+                                                                    >
+                                                                        Заказать
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="accordion__item"
+                                                    >
+                                                        <h2
+                                                            class="accordion__item-header"
+                                                        >
+                                                            <button
+                                                                type="button"
+                                                                class="accordion__item-btn"
+                                                                data-target="accordion-collapse-2"
+                                                            >
+                                                                Название услуги
+                                                            </button>
+                                                        </h2>
+
+                                                        <div
+                                                            id="accordion-collapse-2"
+                                                            class="accordion__item-collapse"
+                                                        >
+                                                            <div
+                                                                class="accordion__item-body"
+                                                            >
+                                                                <div
+                                                                    class="service"
+                                                                >
+                                                                    <p
+                                                                        class="service__price"
+                                                                    >
+                                                                        ЦЕНА: 10
+                                                                        000₽
+                                                                    </p>
+                                                                    <p
+                                                                        class="service__desc"
+                                                                    >
+                                                                        Lorem
+                                                                        ipsum
+                                                                        dolor
+                                                                        sit amet
+                                                                        consectetur
+                                                                        adipiscing
+                                                                        elit Ut
+                                                                        et massa
+                                                                        mi.
+                                                                        Aliquam
+                                                                        in
+                                                                        hendrerit
+                                                                        urna.
+                                                                        Pellentesque
+                                                                        sit amet
+                                                                        sapien
+                                                                        fringilla,
+                                                                        mattis
+                                                                        ligula
+                                                                        consectetur,
+                                                                        ultrices
+                                                                        mauris.
+                                                                        Maecenas
+                                                                        vitae
+                                                                        mattis
+                                                                        tellus.
+                                                                    </p>
+
+                                                                    <button
+                                                                        type="button"
+                                                                        class="btn service__btn"
+                                                                    >
+                                                                        Заказать
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end of accordion -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion__item">
+                                        <h2 class="accordion__item-header">
+                                            <button
+                                                type="button"
+                                                class="accordion__item-btn"
+                                                data-target="accordion-collapse-2"
+                                            >
+                                                лабораторные исследования
+                                            </button>
+                                        </h2>
+
+                                        <div
+                                            id="accordion-collapse-2"
+                                            class="accordion__item-collapse"
+                                        >
+                                            <div class="accordion__item-body">
+                                                <!-- inner accordion -->
+                                                <div
+                                                    class="accordion accordion--inner"
+                                                >
+                                                    <div
+                                                        class="accordion__item"
+                                                    >
+                                                        <h2
+                                                            class="accordion__item-header"
+                                                        >
+                                                            <button
+                                                                type="button"
+                                                                class="accordion__item-btn"
+                                                                data-target="accordion-collapse-1"
+                                                            >
+                                                                НАЗВАНИЕ УСЛУГИ
+                                                            </button>
+                                                        </h2>
+
+                                                        <div
+                                                            id="accordion-collapse-1"
+                                                            class="accordion__item-collapse"
+                                                        >
+                                                            <div
+                                                                class="accordion__item-body"
+                                                            >
+                                                                <div
+                                                                    class="service"
+                                                                >
+                                                                    <p
+                                                                        class="service__price"
+                                                                    >
+                                                                        ЦЕНА: 10
+                                                                        000₽
+                                                                    </p>
+                                                                    <p
+                                                                        class="service__desc"
+                                                                    >
+                                                                        Lorem
+                                                                        ipsum
+                                                                        dolor
+                                                                        sit amet
+                                                                        consectetur
+                                                                        adipiscing
+                                                                        elit Ut
+                                                                        et massa
+                                                                        mi.
+                                                                        Aliquam
+                                                                        in
+                                                                        hendrerit
+                                                                        urna.
+                                                                        Pellentesque
+                                                                        sit amet
+                                                                        sapien
+                                                                        fringilla,
+                                                                        mattis
+                                                                        ligula
+                                                                        consectetur,
+                                                                        ultrices
+                                                                        mauris.
+                                                                        Maecenas
+                                                                        vitae
+                                                                        mattis
+                                                                        tellus.
+                                                                    </p>
+
+                                                                    <button
+                                                                        type="button"
+                                                                        class="btn service__btn"
+                                                                    >
+                                                                        Заказать
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="accordion__item"
+                                                    >
+                                                        <h2
+                                                            class="accordion__item-header"
+                                                        >
+                                                            <button
+                                                                type="button"
+                                                                class="accordion__item-btn"
+                                                                data-target="accordion-collapse-2"
+                                                            >
+                                                                Название услуги
+                                                            </button>
+                                                        </h2>
+
+                                                        <div
+                                                            id="accordion-collapse-2"
+                                                            class="accordion__item-collapse"
+                                                        >
+                                                            <div
+                                                                class="accordion__item-body"
+                                                            >
+                                                                <div
+                                                                    class="service"
+                                                                >
+                                                                    <p
+                                                                        class="service__price"
+                                                                    >
+                                                                        ЦЕНА: 10
+                                                                        000₽
+                                                                    </p>
+                                                                    <p
+                                                                        class="service__desc"
+                                                                    >
+                                                                        Lorem
+                                                                        ipsum
+                                                                        dolor
+                                                                        sit amet
+                                                                        consectetur
+                                                                        adipiscing
+                                                                        elit Ut
+                                                                        et massa
+                                                                        mi.
+                                                                        Aliquam
+                                                                        in
+                                                                        hendrerit
+                                                                        urna.
+                                                                        Pellentesque
+                                                                        sit amet
+                                                                        sapien
+                                                                        fringilla,
+                                                                        mattis
+                                                                        ligula
+                                                                        consectetur,
+                                                                        ultrices
+                                                                        mauris.
+                                                                        Maecenas
+                                                                        vitae
+                                                                        mattis
+                                                                        tellus.
+                                                                    </p>
+
+                                                                    <button
+                                                                        type="button"
+                                                                        class="btn service__btn"
+                                                                    >
+                                                                        Заказать
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end of accordion -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion__item">
+                                        <h2 class="accordion__item-header">
+                                            <button
+                                                type="button"
+                                                class="accordion__item-btn"
+                                                data-target="accordion-collapse-3"
+                                            >
+                                                исследования грунта
+                                            </button>
+                                        </h2>
+
+                                        <div
+                                            id="accordion-collapse-3"
+                                            class="accordion__item-collapse"
+                                        >
+                                            <div class="accordion__item-body">
+                                                <!-- inner accordion -->
+                                                <div
+                                                    class="accordion accordion--inner"
+                                                >
+                                                    <div
+                                                        class="accordion__item"
+                                                    >
+                                                        <h2
+                                                            class="accordion__item-header"
+                                                        >
+                                                            <button
+                                                                type="button"
+                                                                class="accordion__item-btn"
+                                                                data-target="accordion-collapse-1"
+                                                            >
+                                                                НАЗВАНИЕ УСЛУГИ
+                                                            </button>
+                                                        </h2>
+
+                                                        <div
+                                                            id="accordion-collapse-1"
+                                                            class="accordion__item-collapse"
+                                                        >
+                                                            <div
+                                                                class="accordion__item-body"
+                                                            >
+                                                                <div
+                                                                    class="service"
+                                                                >
+                                                                    <p
+                                                                        class="service__price"
+                                                                    >
+                                                                        ЦЕНА: 10
+                                                                        000₽
+                                                                    </p>
+                                                                    <p
+                                                                        class="service__desc"
+                                                                    >
+                                                                        Lorem
+                                                                        ipsum
+                                                                        dolor
+                                                                        sit amet
+                                                                        consectetur
+                                                                        adipiscing
+                                                                        elit Ut
+                                                                        et massa
+                                                                        mi.
+                                                                        Aliquam
+                                                                        in
+                                                                        hendrerit
+                                                                        urna.
+                                                                        Pellentesque
+                                                                        sit amet
+                                                                        sapien
+                                                                        fringilla,
+                                                                        mattis
+                                                                        ligula
+                                                                        consectetur,
+                                                                        ultrices
+                                                                        mauris.
+                                                                        Maecenas
+                                                                        vitae
+                                                                        mattis
+                                                                        tellus.
+                                                                    </p>
+
+                                                                    <button
+                                                                        type="button"
+                                                                        class="btn service__btn"
+                                                                    >
+                                                                        Заказать
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="accordion__item"
+                                                    >
+                                                        <h2
+                                                            class="accordion__item-header"
+                                                        >
+                                                            <button
+                                                                type="button"
+                                                                class="accordion__item-btn"
+                                                                data-target="accordion-collapse-2"
+                                                            >
+                                                                Название услуги
+                                                            </button>
+                                                        </h2>
+
+                                                        <div
+                                                            id="accordion-collapse-2"
+                                                            class="accordion__item-collapse"
+                                                        >
+                                                            <div
+                                                                class="accordion__item-body"
+                                                            >
+                                                                <div
+                                                                    class="service"
+                                                                >
+                                                                    <p
+                                                                        class="service__price"
+                                                                    >
+                                                                        ЦЕНА: 10
+                                                                        000₽
+                                                                    </p>
+                                                                    <p
+                                                                        class="service__desc"
+                                                                    >
+                                                                        Lorem
+                                                                        ipsum
+                                                                        dolor
+                                                                        sit amet
+                                                                        consectetur
+                                                                        adipiscing
+                                                                        elit Ut
+                                                                        et massa
+                                                                        mi.
+                                                                        Aliquam
+                                                                        in
+                                                                        hendrerit
+                                                                        urna.
+                                                                        Pellentesque
+                                                                        sit amet
+                                                                        sapien
+                                                                        fringilla,
+                                                                        mattis
+                                                                        ligula
+                                                                        consectetur,
+                                                                        ultrices
+                                                                        mauris.
+                                                                        Maecenas
+                                                                        vitae
+                                                                        mattis
+                                                                        tellus.
+                                                                    </p>
+
+                                                                    <button
+                                                                        type="button"
+                                                                        class="btn service__btn"
+                                                                    >
+                                                                        Заказать
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end of accordion -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion__item">
+                                        <h2 class="accordion__item-header">
+                                            <button
+                                                type="button"
+                                                class="accordion__item-btn"
+                                                data-target="accordion-collapse-4"
+                                            >
+                                                Можете ли Вы осуществлять
+                                                лабораторный контроль?
+                                            </button>
+                                        </h2>
+
+                                        <div
+                                            id="accordion-collapse-4"
+                                            class="accordion__item-collapse"
+                                        >
+                                            <div class="accordion__item-body">
+                                                <!-- inner accordion -->
+                                                <div
+                                                    class="accordion accordion--inner"
+                                                >
+                                                    <div
+                                                        class="accordion__item"
+                                                    >
+                                                        <h2
+                                                            class="accordion__item-header"
+                                                        >
+                                                            <button
+                                                                type="button"
+                                                                class="accordion__item-btn"
+                                                                data-target="accordion-collapse-1"
+                                                            >
+                                                                НАЗВАНИЕ УСЛУГИ
+                                                            </button>
+                                                        </h2>
+
+                                                        <div
+                                                            id="accordion-collapse-1"
+                                                            class="accordion__item-collapse"
+                                                        >
+                                                            <div
+                                                                class="accordion__item-body"
+                                                            >
+                                                                <div
+                                                                    class="service"
+                                                                >
+                                                                    <p
+                                                                        class="service__price"
+                                                                    >
+                                                                        ЦЕНА: 10
+                                                                        000₽
+                                                                    </p>
+                                                                    <p
+                                                                        class="service__desc"
+                                                                    >
+                                                                        Lorem
+                                                                        ipsum
+                                                                        dolor
+                                                                        sit amet
+                                                                        consectetur
+                                                                        adipiscing
+                                                                        elit Ut
+                                                                        et massa
+                                                                        mi.
+                                                                        Aliquam
+                                                                        in
+                                                                        hendrerit
+                                                                        urna.
+                                                                        Pellentesque
+                                                                        sit amet
+                                                                        sapien
+                                                                        fringilla,
+                                                                        mattis
+                                                                        ligula
+                                                                        consectetur,
+                                                                        ultrices
+                                                                        mauris.
+                                                                        Maecenas
+                                                                        vitae
+                                                                        mattis
+                                                                        tellus.
+                                                                    </p>
+
+                                                                    <button
+                                                                        type="button"
+                                                                        class="btn service__btn"
+                                                                    >
+                                                                        Заказать
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="accordion__item"
+                                                    >
+                                                        <h2
+                                                            class="accordion__item-header"
+                                                        >
+                                                            <button
+                                                                type="button"
+                                                                class="accordion__item-btn"
+                                                                data-target="accordion-collapse-2"
+                                                            >
+                                                                Название услуги
+                                                            </button>
+                                                        </h2>
+
+                                                        <div
+                                                            id="accordion-collapse-2"
+                                                            class="accordion__item-collapse"
+                                                        >
+                                                            <div
+                                                                class="accordion__item-body"
+                                                            >
+                                                                <div
+                                                                    class="service"
+                                                                >
+                                                                    <p
+                                                                        class="service__price"
+                                                                    >
+                                                                        ЦЕНА: 10
+                                                                        000₽
+                                                                    </p>
+                                                                    <p
+                                                                        class="service__desc"
+                                                                    >
+                                                                        Lorem
+                                                                        ipsum
+                                                                        dolor
+                                                                        sit amet
+                                                                        consectetur
+                                                                        adipiscing
+                                                                        elit Ut
+                                                                        et massa
+                                                                        mi.
+                                                                        Aliquam
+                                                                        in
+                                                                        hendrerit
+                                                                        urna.
+                                                                        Pellentesque
+                                                                        sit amet
+                                                                        sapien
+                                                                        fringilla,
+                                                                        mattis
+                                                                        ligula
+                                                                        consectetur,
+                                                                        ultrices
+                                                                        mauris.
+                                                                        Maecenas
+                                                                        vitae
+                                                                        mattis
+                                                                        tellus.
+                                                                    </p>
+
+                                                                    <button
+                                                                        type="button"
+                                                                        class="btn service__btn"
+                                                                    >
+                                                                        Заказать
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end of accordion -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of accordion -->
+
+                                <!-- form -->
+                                <form
+                                    action="/"
+                                    class="form form--calc"
+                                    method="post"
+                                >
+                                    <h2 class="form__title">
+                                        Расчёт стоимости <br />
+                                        онлайн бесплатно
+                                    </h2>
+                                    <div class="form__group">
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            class="form__input"
+                                            placeholder="Имя"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="form__group">
+                                        <input
+                                            type="tel"
+                                            name="tel"
+                                            class="form__input"
+                                            placeholder="Телефон"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="form__group">
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            class="form__input"
+                                            placeholder="e-mail"
+                                            required
+                                        />
+                                    </div>
+
+                                    <div
+                                        class="form__group form__group--confirm"
+                                    >
+                                        <label
+                                            for="calc-checkbox"
+                                            class="form__label"
+                                        >
+                                            <input
+                                                type="checkbox"
+                                                id="calc-checkbox"
+                                                class="form__checkbox"
+                                                required
+                                            />
+                                            <span
+                                                class="form__check-field"
+                                            ></span>
+
+                                            Даю согласие на обработку
+                                            персональных данных
+                                        </label>
+                                    </div>
+
+                                    <button type="submit" class="btn form__btn">
+                                        Отправить
+                                    </button>
+                                </form>
+                                <!-- end form -->
                             </div>
                         </div>
                     </div>
-                    <div class="accordion__item">
-                        <h2 class="accordion__item-header">
-                            <button
-                                type="button"
-                                class="accordion__item-btn"
-                                data-target="accordion-collapse-1"
-                            >
-                                Accordion item header 3
-                            </button>
-                        </h2>
-
-                        <div
-                            id="accordion-collapse-1"
-                            class="accordion__item-collapse"
-                        >
-                            <div class="accordion__item-body">
-                                collapsed text many many text
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- end of accordion -->
-
-                <!-- <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                    <div class="swiper-scrollbar"></div>
-                </div> -->
-
-                <!-- <form action="/" class="form" method="post">
-                    <h2 class="form__title">From title</h2>
-                    <div class="form__group">
-                        <input
-                            type="text"
-                            name="name"
-                            class="form__input"
-                            placeholder="Имя"
-                            required
-                        />
-                    </div>
-                    <div class="form__group">
-                        <input
-                            type="tel"
-                            name="tel"
-                            class="form__input"
-                            placeholder="Телефон"
-                            required
-                        />
-                    </div>
-
-                    <button type="submit" class="btn btn--blue form__btn">
-                        Заказать звонок
-                    </button>
-                </form> -->
+                </section>
+                <!-- end of section services -->
             </main>
 
             <!-- footer include -->

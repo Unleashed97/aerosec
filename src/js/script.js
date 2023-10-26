@@ -6,24 +6,16 @@ customFunctions.handleAccordion()
 customFunctions.handleTabs()
 
 // vendors
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper--showcase', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
+    slidesPerView: 1,
+    spaceBetween: 40,
 
-    // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
+        nextEl: '.swiper-button-next--showcase',
+        prevEl: '.swiper-button-prev--showcase',
     },
 })
