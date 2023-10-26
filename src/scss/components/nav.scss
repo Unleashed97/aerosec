@@ -1,4 +1,12 @@
 .nav {
+    &__list li a {
+        transition: color 0.3s linear;
+
+        &:hover {
+            color: $colors-accent;
+        }
+    }
+
     &--header {
         @media (max-width: $md) {
             display: none;
@@ -14,12 +22,6 @@
 
                 font-size: 1.6rem;
                 font-weight: 500;
-
-                transition: color 0.3s linear;
-
-                &:hover {
-                    color: $colors-accent;
-                }
             }
         }
     }
@@ -27,11 +29,14 @@
     &--footer {
         .nav__list {
             display: flex;
+            justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 28px;
 
             @media (max-width: 768px) {
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px 22px;
             }
         }
     }

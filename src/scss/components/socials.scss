@@ -1,0 +1,39 @@
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 38px;
+        height: 38px;
+
+        border-radius: 50%;
+        border: 1.5px solid #fff;
+
+        transition: 0.3s linear;
+
+        svg path {
+            transition: 0.3s linear;
+        }
+
+        &:hover {
+            border-color: $colors-accent;
+            svg path {
+                fill: $colors-accent;
+            }
+        }
+
+        @media (max-width: $sm) {
+            width: 32px;
+            height: 32px;
+
+            svg {
+                max-width: 15px;
+            }
+        }
+    }
+}
