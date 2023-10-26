@@ -23,6 +23,8 @@
 
         .accordion__item-body {
             padding: 8px 0 0;
+
+            border: 0;
         }
 
         .service__btn {
@@ -112,5 +114,11 @@
 
     &__item-body {
         padding: 16px 0;
+
+        border-bottom: 1px solid $colors-text;
+    }
+
+    &__text {
+        color: $colors-text-light;
     }
 }

@@ -82,6 +82,40 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 390px));
             justify-content: center;
             gap: 48px 51px;
+
+            @media (max-width: $sm) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    &--faq {
+        .section__title {
+            margin-bottom: 23px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .section__content {
+            display: grid;
+            grid-template-columns: 1fr 41%;
+            gap: 80px;
+
+            @media (max-width: $md) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section__image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+
+            @media (max-width: $md) {
+                display: none;
+            }
         }
     }
 }

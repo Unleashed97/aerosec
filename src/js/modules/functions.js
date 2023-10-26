@@ -38,23 +38,25 @@ export const handleModal = () => {
 }
 
 export const handleAccordion = () => {
-    const accordion = document.querySelector('.accordion')
+    const accordionBtns = document.querySelectorAll('.accordion__item-btn')
 
-    if (accordion) {
-        const accordionBtns = accordion.querySelectorAll('.accordion__item-btn')
+    console.log(accordionBtns)
 
-        accordionBtns.forEach((btn) =>
-            btn.addEventListener('click', () => {
-                const accordionItem = btn.closest('.accordion__item')
-                const accordionCollapse = accordionItem.querySelector(
-                    '.accordion__item-collapse',
-                )
+    accordionBtns.forEach((btn) =>
+        btn.addEventListener('click', () => {
+            const targetCollapseBlockId = btn.getAttribute('data-target')
 
-                accordionCollapse.classList.toggle('active')
-                btn.classList.toggle('active')
-            }),
-        )
-    }
+            console.log(targetCollapseBlockId)
+
+            const accordionCollapseBlock = document.querySelector(
+                `${targetCollapseBlockId}`,
+            )
+            console.log(accordionCollapseBlock)
+
+            accordionCollapseBlock.classList.toggle('active')
+            btn.classList.toggle('active')
+        }),
+    )
 }
 
 export const handleTabs = () => {

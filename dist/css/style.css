@@ -1069,6 +1069,7 @@ body {
   font-family: "Bw Modelica", sans-serif;
   font-size: 1.6rem;
   color: #0b0c0c;
+  background-color: #f7f7f7;
 }
 
 ul {
@@ -1307,6 +1308,7 @@ main {
 }
 .accordion .accordion .accordion__item-body {
   padding: 8px 0 0;
+  border: 0;
 }
 .accordion .accordion .service__btn {
   padding: 12px 20px;
@@ -1366,6 +1368,10 @@ main {
 }
 .accordion__item-body {
   padding: 16px 0;
+  border-bottom: 1px solid #0b0c0c;
+}
+.accordion__text {
+  color: rgba(11, 12, 12, 0.6);
 }
 
 .tabs__nav {
@@ -1466,6 +1472,39 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(250px, 390px));
   justify-content: center;
   gap: 48px 51px;
+}
+@media (max-width: 576px) {
+  .section--advantages .section__content {
+    grid-template-columns: 1fr;
+  }
+}
+.section--faq .section__title {
+  margin-bottom: 23px;
+}
+@media (max-width: 576px) {
+  .section--faq .section__title {
+    margin-bottom: 20px;
+  }
+}
+.section--faq .section__content {
+  display: grid;
+  grid-template-columns: 1fr 41%;
+  gap: 80px;
+}
+@media (max-width: 768px) {
+  .section--faq .section__content {
+    grid-template-columns: 1fr;
+  }
+}
+.section--faq .section__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .section--faq .section__image {
+    display: none;
+  }
 }
 
 .form {
@@ -1631,6 +1670,7 @@ main {
   }
 }
 .card--advantage .card__num {
+  flex-shrink: 0;
   width: 60px;
   height: 60px;
   display: flex;
