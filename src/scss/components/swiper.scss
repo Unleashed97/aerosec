@@ -58,4 +58,49 @@
             cursor: pointer;
         }
     }
+
+    &--testimonials {
+        padding-top: 40px;
+
+        @media (max-width: $md) {
+            padding: 40px 15px 15px;
+        }
+
+        .swiper-controls {
+            position: relative;
+            z-index: 1;
+
+            margin: 10px auto 0;
+
+            width: 80px;
+            height: 32px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .swiper-button-prev--testimonials,
+        .swiper-button-next--testimonials {
+            width: 32px;
+            height: 32px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 50%;
+            background: #fff;
+
+            cursor: pointer;
+        }
+
+        .swiper-slide {
+            transition: transform 0.3s linear;
+        }
+
+        .swiper-slide-active {
+            transform: translateY(-20px);
+        }
+    }
 }

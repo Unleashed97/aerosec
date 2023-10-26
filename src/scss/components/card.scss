@@ -46,4 +46,62 @@
             }
         }
     }
+
+    &--testimonial {
+        max-width: 650px;
+        width: 100%;
+
+        padding: 24px;
+
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 12px 8px #ececec;
+
+        .card__header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+
+            border-bottom: 1px solid $colors-text;
+        }
+
+        .card__icon {
+            width: 60px;
+            height: 60px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 0 0 6px 3px #ececec;
+
+            img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .card__title {
+            margin-bottom: 4px;
+
+            font-size: 2.4rem;
+            font-weight: 500;
+            text-transform: uppercase;
+
+            @media (max-width: $sm) {
+                font-size: 2rem;
+            }
+        }
+
+        .card__subtitle {
+            font-size: 1.6rem;
+            color: $colors-text-light;
+        }
+    }
 }

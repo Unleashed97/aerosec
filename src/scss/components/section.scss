@@ -118,4 +118,14 @@
             }
         }
     }
+
+    &--testimonials {
+        .section__title {
+            margin-bottom: 38px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 24px;
+            }
+        }
+    }
 }
