@@ -32,8 +32,12 @@ const swiperTestimonials = new Swiper('.swiper--testimonials', {
             slidesPerView: 1,
             spaceBetween: 30,
         },
-        600: {
+        768: {
             slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1400: {
+            slidesPerView: 3,
             spaceBetween: 30,
         },
     },
