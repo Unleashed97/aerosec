@@ -1094,11 +1094,22 @@ p {
 }
 
 .wrapper {
+  margin-top: 136px;
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
   min-height: 100vh;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    margin-top: 90px;
+  }
+}
+@media (max-width: 576px) {
+  .wrapper {
+    margin-top: 72px;
+  }
 }
 
 main {
@@ -1410,18 +1421,21 @@ main {
   font-weight: 500;
   text-transform: uppercase;
 }
+@media (max-width: 576px) {
+  .section__title {
+    margin-bottom: 12px;
+  }
+}
 .section__subtitle {
   margin-bottom: 36px;
   font-size: 1.6rem;
   color: rgba(11, 12, 12, 0.6);
 }
 .section--showcase {
-  margin-top: 136px;
   margin-bottom: 80px;
 }
 @media (max-width: 768px) {
   .section--showcase {
-    margin-top: 72px;
     margin-bottom: 44px;
   }
 }
@@ -1511,6 +1525,45 @@ main {
 @media (max-width: 576px) {
   .section--testimonials .section__title {
     margin-bottom: 24px;
+  }
+}
+.section--projects .section__subtitle {
+  margin-bottom: 40px;
+}
+@media (max-width: 576px) {
+  .section--projects .section__subtitle {
+    margin-bottom: 28px;
+  }
+}
+.section--projects .section__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(299px, 1fr));
+  gap: 40px 28px;
+}
+@media (max-width: 768px) {
+  .section--projects .section__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.section--form .section__inner {
+  display: grid;
+  grid-template-columns: 34% 1fr;
+  gap: 80px;
+}
+@media (max-width: 768px) {
+  .section--form .section__inner {
+    grid-template-columns: 1fr;
+  }
+}
+.section--form .section__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .section--form .section__image {
+    display: none;
   }
 }
 
@@ -1782,6 +1835,28 @@ main {
   }
 }
 .card--testimonial .card__subtitle {
+  font-size: 1.6rem;
+  color: rgba(11, 12, 12, 0.6);
+}
+.card--project {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: auto/span 3;
+  gap: 0;
+}
+.card--project .card__image {
+  margin-bottom: 16px;
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.card--project .card__title {
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.card--project .card__desc {
   font-size: 1.6rem;
   color: rgba(11, 12, 12, 0.6);
 }

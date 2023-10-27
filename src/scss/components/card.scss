@@ -104,4 +104,33 @@
             color: $colors-text-light;
         }
     }
+
+    &--project {
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: auto / span 3;
+
+        gap: 0;
+
+        .card__image {
+            margin-bottom: 16px;
+
+            display: block;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+        .card__title {
+            margin-bottom: 8px;
+
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        .card__desc {
+            font-size: 1.6rem;
+
+            color: $colors-text-light;
+        }
+    }
 }

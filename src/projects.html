@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <!-- head include -->
+    @@include('html/partials/head.html', { "title": "Проекты" })
+
+    <body>
+        <div class="wrapper">
+            <!-- modal include -->
+            @@include('html/partials/modal.html')
+
+            <!-- header include -->
+            @@include('html/partials/header.html')
+
+            <!-- main -->
+            <main>
+                <!-- section projects -->
+                <section class="section section--projects">
+                    <div class="container">
+                        <div class="section__inner">
+                            <h2 class="section__title">
+                                Lorem ipsum dolor sit amet.
+                            </h2>
+                            <p class="section__subtitle">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipiscing elit Ut et massa mi. Aliquam in
+                                hendrerit urna.
+                            </p>
+
+                            <div class="section__content">
+                                <div class="card card--project">
+                                    <img
+                                        src="img/section/projects/1.jpg"
+                                        alt=""
+                                        class="card__image"
+                                    />
+                                    <p class="card__title">
+                                        Lorem ipsum dolor sit amet
+                                    </p>
+                                    <p class="card__desc">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipiscing elit Ut et massa
+                                    </p>
+                                </div>
+                                <div class="card card--project">
+                                    <img
+                                        src="img/section/projects/2.jpg"
+                                        alt=""
+                                        class="card__image"
+                                    />
+                                    <p class="card__title">
+                                        Lorem ipsum dolor sit amet
+                                    </p>
+                                    <p class="card__desc">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipiscing elit Ut et massa
+                                    </p>
+                                </div>
+                                <div class="card card--project">
+                                    <img
+                                        src="img/section/projects/3.jpg"
+                                        alt=""
+                                        class="card__image"
+                                    />
+                                    <p class="card__title">
+                                        Lorem ipsum dolor sit amet
+                                    </p>
+                                    <p class="card__desc">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipiscing elit Ut et massa
+                                    </p>
+                                </div>
+                                <div class="card card--project">
+                                    <img
+                                        src="img/section/projects/4.jpg"
+                                        alt=""
+                                        class="card__image"
+                                    />
+                                    <p class="card__title">
+                                        Lorem ipsum dolor sit amet
+                                    </p>
+                                    <p class="card__desc">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipiscing elit Ut et massa
+                                    </p>
+                                </div>
+                                <div class="card card--project">
+                                    <img
+                                        src="img/section/projects/1.jpg"
+                                        alt=""
+                                        class="card__image"
+                                    />
+                                    <p class="card__title">
+                                        Lorem ipsum dolor sit amet
+                                    </p>
+                                    <p class="card__desc">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipiscing elit Ut et massa
+                                    </p>
+                                </div>
+                                <div class="card card--project">
+                                    <img
+                                        src="img/section/projects/2.jpg"
+                                        alt=""
+                                        class="card__image"
+                                    />
+                                    <p class="card__title">
+                                        Lorem ipsum dolor sit amet
+                                    </p>
+                                    <p class="card__desc">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipiscing elit Ut et massa
+                                    </p>
+                                </div>
+                                <div class="card card--project">
+                                    <img
+                                        src="img/section/projects/3.jpg"
+                                        alt=""
+                                        class="card__image"
+                                    />
+                                    <p class="card__title">
+                                        Lorem ipsum dolor sit amet
+                                    </p>
+                                    <p class="card__desc">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipiscing elit Ut et massa
+                                    </p>
+                                </div>
+                                <div class="card card--project">
+                                    <img
+                                        src="img/section/projects/4.jpg"
+                                        alt=""
+                                        class="card__image"
+                                    />
+                                    <p class="card__title">
+                                        Lorem ipsum dolor sit amet
+                                    </p>
+                                    <p class="card__desc">
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipiscing elit Ut et massa
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end of section projects -->
+
+                <!-- section form -->
+                <section class="section section--form">
+                    <div class="container">
+                        <div class="section__inner">
+                            <!-- form -->
+                            <form
+                                action="/"
+                                class="form form--calc"
+                                method="post"
+                            >
+                                <h2 class="form__title">
+                                    Расчёт стоимости <br />
+                                    онлайн бесплатно
+                                </h2>
+                                <div class="form__group">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        class="form__input"
+                                        placeholder="Имя"
+                                        required
+                                    />
+                                </div>
+                                <div class="form__group">
+                                    <input
+                                        type="tel"
+                                        name="tel"
+                                        class="form__input"
+                                        placeholder="Телефон"
+                                        required
+                                    />
+                                </div>
+                                <div class="form__group">
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        class="form__input"
+                                        placeholder="e-mail"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="form__group form__group--confirm">
+                                    <label
+                                        for="calc-checkbox"
+                                        class="form__label"
+                                    >
+                                        <input
+                                            type="checkbox"
+                                            id="calc-checkbox"
+                                            class="form__checkbox"
+                                            required
+                                        />
+                                        <span class="form__check-field"></span>
+
+                                        Даю согласие на обработку персональных
+                                        данных
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn form__btn">
+                                    Отправить
+                                </button>
+                            </form>
+                            <!-- end form -->
+
+                            <img
+                                src="img/section/form/building1.jpg"
+                                alt=""
+                                class="section__image"
+                            />
+                        </div>
+                    </div>
+                </section>
+                <!-- end of section form -->
+            </main>
+
+            <!-- footer include -->
+            @@include('html/partials/footer.html')
+        </div>
+    </body>
+</html>
