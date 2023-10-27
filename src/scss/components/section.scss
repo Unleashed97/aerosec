@@ -171,4 +171,24 @@
             }
         }
     }
+
+    &--licenses {
+        .section__subtitle {
+            margin-bottom: 32px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 16px;
+            }
+        }
+
+        .section__content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+
+            @media (max-width: $lg) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
 }

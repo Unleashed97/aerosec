@@ -133,4 +133,67 @@
             color: $colors-text-light;
         }
     }
+
+    &--cert {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 0 20px;
+
+        padding: 16px;
+
+        border-radius: 12px;
+        box-shadow: 0 0 6px 3px #ececec;
+
+        @media (max-width: $sm) {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            gap: 12px;
+            place-items: center;
+        }
+
+        .card__image-wrapper {
+            width: fit-content;
+            box-shadow: 0 0 6px 3px #ececec;
+
+            height: fit-content;
+
+            grid-column: 1;
+            grid-row: 1/3;
+
+            @media (max-width: $sm) {
+                grid-column: auto;
+                grid-row: 2;
+
+                margin-bottom: 0;
+            }
+        }
+
+        .card__title {
+            margin-bottom: 12px;
+
+            font-size: 2rem;
+            font-weight: 500;
+
+            grid-column: 2;
+            grid-row: 1;
+
+            @media (max-width: $sm) {
+                grid-column: auto;
+                grid-row: 1;
+
+                margin-bottom: 0;
+            }
+        }
+
+        .card__desc {
+            grid-column: 2;
+            grid-row: 2;
+
+            @media (max-width: $sm) {
+                grid-column: auto;
+                grid-row: auto;
+            }
+        }
+    }
 }
