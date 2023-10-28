@@ -1,13 +1,30 @@
 .swiper {
     &--showcase {
-        @media (max-width: $sm) {
-            margin: 0 -16px;
+        .swiper-slide {
+            position: relative;
+
+            // height: 548px;
+
+            aspect-ratio: 2.33;
+
+            padding: 24px;
+
+            @media (max-width: $sm) {
+                padding: 20px 16px;
+
+                aspect-ratio: 1.74;
+            }
         }
         .swiper-image {
-            display: block;
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+
             max-width: 100%;
             height: auto;
             width: 100%;
+
+            object-fit: cover;
         }
         .swiper-controls {
             position: absolute;
@@ -57,6 +74,25 @@
 
             cursor: pointer;
         }
+
+        .swiper-spinner {
+            width: 32px;
+            height: 32px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                transform: rotate(-90deg);
+            }
+
+            .swiper-spinner__progress {
+                --progress: 0;
+                stroke-dasharray: 94.2;
+                stroke-dashoffset: calc(94.2 * (1 - var(--progress)));
+            }
+        }
     }
 
     &--testimonials {
@@ -91,6 +127,7 @@
 
             border-radius: 50%;
             background: #fff;
+            box-shadow: 0 0 6px 3px #ececec;
 
             cursor: pointer;
         }

@@ -16,6 +16,8 @@
 
         @media (max-width: $sm) {
             margin-bottom: 12px;
+
+            font-size: 2.4rem;
         }
     }
 
@@ -34,14 +36,11 @@
         }
 
         .section__inner {
-            position: relative;
+            @media (max-width: $sm) {
+                margin: 0 -16px;
+            }
         }
         .section__title {
-            position: absolute;
-            top: 24px;
-            left: 24px;
-            z-index: 2;
-
             font-size: 2rem;
             font-weight: 500;
             text-transform: uppercase;
@@ -64,6 +63,7 @@
 
             @media (max-width: $md) {
                 grid-template-columns: 1fr;
+                gap: 32px;
             }
         }
     }
@@ -85,6 +85,7 @@
 
             @media (max-width: $sm) {
                 grid-template-columns: 1fr;
+                gap: 32px;
             }
         }
     }
@@ -141,8 +142,13 @@
         .section__content {
             width: 100%;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(299px, 1fr));
+            // grid-template-columns: repeat(auto-fit, minmax(299px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 40px 28px;
+
+            @media (max-width: $lg) {
+                grid-template-columns: repeat(3, 1fr);
+            }
 
             @media (max-width: $md) {
                 grid-template-columns: repeat(2, 1fr);
@@ -188,6 +194,68 @@
 
             @media (max-width: $lg) {
                 grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+    }
+
+    &--about-page {
+        .section__inner {
+            display: grid;
+            grid-template-columns: 56% 1fr;
+            gap: 60px 64px;
+
+            @media (max-width: $md) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section__map-wrapper {
+            grid-column: 1;
+            grid-row: 2;
+
+            @media (max-width: $md) {
+                grid-column: auto;
+                grid-row: auto;
+
+                margin: 0 -16px;
+            }
+        }
+    }
+
+    &--about {
+        margin-bottom: 0;
+
+        @media (max-width: $sm) {
+            margin-bottom: 0;
+        }
+
+        .section__title {
+            margin-bottom: 14px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 12px;
+            }
+        }
+
+        .section__text {
+            margin-bottom: 16px;
+            color: rgba($colors-text, 0.8);
+        }
+    }
+
+    &--contact-us {
+        margin-bottom: 0;
+
+        @media (max-width: $sm) {
+            margin-bottom: 0;
+        }
+
+        .section__title {
+            margin-bottom: 14px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 12px;
             }
         }
     }

@@ -85,6 +85,15 @@
                 max-width: 100%;
                 height: auto;
             }
+
+            @media (max-width: $sm) {
+                width: 47px;
+                height: 47px;
+
+                img {
+                    max-width: 24px;
+                }
+            }
         }
 
         .card__title {
@@ -103,6 +112,10 @@
             font-size: 1.6rem;
             color: $colors-text-light;
         }
+
+        .card__text {
+            color: $colors-text-light;
+        }
     }
 
     &--project {
@@ -111,6 +124,8 @@
         grid-row: auto / span 3;
 
         gap: 0;
+
+        opacity: 1;
 
         .card__image {
             margin-bottom: 16px;

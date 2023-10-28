@@ -1,9 +1,11 @@
 import * as customFunctions from './modules/functions.js'
 
 customFunctions.handleBurger()
-customFunctions.handleModal()
 customFunctions.handleAccordion()
-customFunctions.handleTabs()
+customFunctions.handlePaginationProject()
+customFunctions.handlePaginationLicense()
+
+const progressBar = document.querySelector('.swiper-spinner__progress')
 
 // vendors
 const swiperShowcase = new Swiper('.swiper--showcase', {
@@ -13,10 +15,20 @@ const swiperShowcase = new Swiper('.swiper--showcase', {
 
     slidesPerView: 1,
     spaceBetween: 40,
+    // speed: 1000,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
 
     navigation: {
         nextEl: '.swiper-button-next--showcase',
         prevEl: '.swiper-button-prev--showcase',
+    },
+    on: {
+        autoplayTimeLeft(s, time, progress) {
+            progressBar.style.setProperty('--progress', 1 - progress)
+        },
     },
 })
 
@@ -25,7 +37,8 @@ const swiperTestimonials = new Swiper('.swiper--testimonials', {
     slidesPerView: 2,
     spaceBetween: 30,
     centeredSlides: true,
-    // centeredSlidesBounds: true,
+    centeredSlidesBounds: true,
+    loop: true,
 
     breakpoints: {
         0: {

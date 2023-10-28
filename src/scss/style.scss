@@ -74,6 +74,16 @@ main {
     grid-area: main;
 }
 
+.hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 // components
 @import 'components/btn.scss';
 @import 'components/header.scss';
@@ -90,3 +100,5 @@ main {
 @import 'components/card.scss';
 @import 'components/contacts.scss';
 @import 'components/socials.scss';
+@import 'components/address.scss';
+@import 'components/pagination.scss';
